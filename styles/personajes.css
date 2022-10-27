@@ -1,0 +1,138 @@
+.personajes_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    background-color: #010127;
+    height: 230rem;
+    width: 100%;
+}
+
+    .personajes_container_title{
+        display: flex;
+        align-items: center;
+        width: 95%;
+        height: 10rem;
+        border-bottom: .1rem solid #fff;
+    }
+
+        .personajes_container_title h2{
+            font-size: 2.5rem;
+            color: #fff;
+        }
+
+    .personajes_container_galery{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column wrap;
+        width: 100%;
+        height: 210rem;
+    }
+
+        .personaje_container{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-flow: column wrap;
+            width: 90%;
+            height: 70rem;
+        }
+
+            .personaje_container img{
+                height: 50rem;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 1rem;
+                transform:  scale(1.0);
+                transition: transform 1s;
+            }
+
+            .personaje_container img:hover{
+                transform: scale(0.9);
+                transition: transform 1s;
+            }
+
+            .personaje_container a{
+                text-decoration: none;
+                color: #fff;
+            }
+
+            .personaje_container a:hover{
+                color: #CAFF00;
+            }
+
+                .personaje_container a h3{
+                    font-size: 2rem;
+                }
+
+                .personaje_container p{
+                    font-size: 1.5rem;
+                    color: #fff;
+                }
+
+@media only screen and (min-width:768px){
+    
+        .personajes_container_title{
+            display: flex;
+            align-items: center;
+            width: 95%;
+            height: 10rem;
+            border-bottom: .1rem solid #fff;
+        }
+    
+            .personajes_container_title h2{
+                font-size: 4rem;
+            }
+    
+            .personaje_container{
+                width: 70rem;
+            }
+    
+                    .personaje_container a h3{
+                        font-size: 3rem;
+                    }
+    
+                    .personaje_container p{
+                        font-size: 2rem;
+                    }
+}
+
+@media only screen and (min-width: 1600px){
+
+        .personajes_container{
+            height: 100rem;
+        }
+        
+        .personajes_container_title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 10rem;
+        }
+            .personajes_container_title h2{
+                width: 95%;
+                font-size: 6rem;
+            }
+        
+            .personajes_container_galery{
+                justify-content: space-evenly;
+                flex-flow: row wrap;
+                height: 90rem;
+            }
+        
+                .personaje_container{
+                    width: 50rem;
+                    height: 70rem;
+                }
+        
+                        .personaje_container a h3{
+                            font-size: 3rem;
+                        }
+        
+                        .personaje_container p{
+                            font-size: 2rem;
+                        }
+                
+}

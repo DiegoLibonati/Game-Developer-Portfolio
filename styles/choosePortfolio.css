@@ -1,0 +1,83 @@
+main{
+    background-color: #010127;
+}
+
+    .choose_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10rem;
+        height: 150rem;
+        width: 100%;
+    }
+
+        .choose_container_categories{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-flow: column wrap;
+            height: 100%;
+            width: 90%;
+        }
+
+            .choose_container_category{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-flow: column wrap;
+                height: 70rem;
+                width: 100%;
+            }
+
+                .choose_container_category img{
+                    height: 50rem;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 1rem;
+                    transform: scale(1.0);
+                    transition: transform 1s;
+                }
+
+                .choose_container_category img:hover{
+                    transform: scale(0.9);
+                    transition: transform 1s;
+                }
+
+                .choose_container_category a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                    .choose_container_category a h2{
+                        font-size: 4rem;
+                    }
+
+                    .choose_container_category a h2:hover{
+                        color: #CAFF00;
+                    }
+
+@media only screen and (min-width: 768px){
+
+            .choose_container_category{
+                height: 70rem;
+                width: 70rem;
+            }
+
+}
+
+@media only screen and (min-width: 1600px){
+
+    .choose_container{
+        height: 90rem;
+    }
+
+        .choose_container_category{
+            height: 70rem;
+            width: 50rem;
+        }
+
+            .choose_container_category a h2{
+                font-size: 6rem;
+            }
+
+}

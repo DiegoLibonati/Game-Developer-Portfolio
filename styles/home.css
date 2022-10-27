@@ -1,0 +1,262 @@
+.home_container{
+    width: 100%;
+    height: 75rem;
+}
+
+    .home_container_galery{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 75rem;
+        background: url("../templates/Home/particles.gif"), url("../templates/Home/blue.png");
+        background-position: center;
+        background-attachment:scroll;
+        background-size: cover;
+        overflow: hidden;
+        background-color: #010127;
+    }
+
+        .homeImg{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        
+        .showHomeImg{
+            opacity: .7;
+            transition: opacity 1s;
+        }
+
+    .home_container_information{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-flow: column wrap;
+        margin-top: 10rem;
+        height: 65rem;
+        width: 100%;
+    }
+
+        .home_container_information_description{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            flex-flow: column wrap;
+            height: 15rem;
+            width: 90%;
+        }
+
+            .home_container_information_description p{
+                font-size: 1.5rem;
+                color: #fff;
+            }
+
+            .home_container_information_description h1{
+                font-size: 3.5rem;
+                color: #fff;
+            }
+
+        .home_container_information_newgame{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            flex-flow: row wrap;
+            height: 30rem;
+            width: 90%;
+        }
+
+            .home_container_information_newgame img{
+                width: 50%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 1rem;
+            }
+
+            .home_container_information_newgame_text{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-evenly;
+                flex-flow: column wrap;
+                padding: 1rem;
+            }
+
+                .home_container_information_newgame h2{
+                    font-size: 2.5rem;
+                    color: #fff;
+                }
+
+                .home_container_information_newgame p{
+                    font-size: 1.5rem;
+                    color: #fff;
+                }
+
+                .home_container_information_newgame a{
+                    font-size: 2rem;
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+                    .home_container_information_newgame a i{
+                        font-size: 1rem;
+                    }
+
+            .home_container_information_newgame a:hover{
+                color: #CAFF00;
+            }
+
+
+@media only screen and (min-width: 768px){
+
+    .home_container{
+        height: 90rem;
+    }
+    
+        .home_container_galery{
+            height: 90rem;
+        }
+    
+        .home_container_information{
+            align-items: flex-start;
+            margin-left: 5rem;
+            height: 80rem;
+        }
+    
+            .home_container_information_description{
+                height: 20rem;
+                width: 62rem;
+            }
+    
+                .home_container_information_description p{
+                    font-size: 2rem;
+                }
+    
+                .home_container_information_description h1{
+                    font-size: 7rem;
+                }
+    
+            .home_container_information_newgame{
+                justify-content: flex-start;
+                flex-flow: row wrap;
+                height: 30rem;
+                width: 80rem;
+            }
+    
+                .home_container_information_newgame img{
+                    width: 30rem;
+                    height: 100%;
+                }
+    
+                .home_container_information_newgame_text{
+                    width: 50%;
+                    height: 100%;
+                    align-items: flex-start;
+                    justify-content: center;
+                    padding: 1rem;
+                }
+                    .home_container_information_newgame h2{
+                        font-size: 4rem;
+                        text-align: start;
+                    }
+    
+                    .home_container_information_newgame p{
+                        font-size: 2rem;
+                        margin-top: 5rem;
+                    }
+    
+                    .home_container_information_newgame a{
+                        font-size: 3rem;
+                        margin-top: 5rem;
+                    }
+    
+                        .home_container_information_newgame a i{
+                            font-size: 1.5rem;
+                        }
+
+}
+
+@media only screen and (min-width: 1024px){
+
+    .home_container{
+        height: 100rem;
+    }
+    
+        .home_container_galery{
+            height: 100rem;
+        }
+    
+        .home_container_information{
+            height: 90rem;
+        }
+    
+            .home_container_information_description{
+                height: 20rem;
+                width: 75rem;
+            }
+    
+                .home_container_information_description p{
+                    font-size: 2rem;
+                    line-height: 3rem;
+                    width: 55rem;
+                }
+    
+                .home_container_information_description h1{
+                    font-size: 8rem;
+                }
+    
+            .home_container_information_newgame{
+                justify-content: flex-start;
+                align-items: center;
+                flex-flow: row wrap;
+                height: 40rem;
+                width: 80rem;
+            }
+    
+                .home_container_information_newgame img{
+                    width: 40rem;
+                    height: 25rem;
+                }
+    
+                .home_container_information_newgame_text{
+                    width: 40rem;
+                    height: 25rem;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+                .home_container_information_newgame h2{
+                    font-size: 3rem;
+                }
+        
+                .home_container_information_newgame p{
+                    font-size: 2rem;
+                    margin-top: 5rem;
+                }
+        
+                .home_container_information_newgame a{
+                    font-size: 2rem;
+                    margin-top: 5rem;
+                }
+        
+                    .home_container_information_newgame a i{
+                        font-size: 1rem;
+                    }
+
+}
+
+
+@media only screen and (min-width: 1600px){
+
+    .home_container_information_description{
+        height: 25rem;
+        width: 100rem;
+    }
+
+        .home_container_information_description h1{
+            font-size: 11rem;
+        }
+
+}
