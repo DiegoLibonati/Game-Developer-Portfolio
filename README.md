@@ -37,7 +37,7 @@ I made a website about game developer portfolio, but basically what I did was to
 
 ## Portfolio Link
 
-`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Game%20developer%20portfolio%20page`
+`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Game%20Developer%20Portfolio%20Page`
 
 ## Video
 
