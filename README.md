@@ -23,21 +23,9 @@ I made a website about game developer portfolio, but basically what I did was to
 2. Javascript
 3. HTML5
 
-## Galery
-
-![Game-Developer-Car](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/Css/Imagenes/gamedesign-0.jpg)
-
-![Game-Developer-Car](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/Css/Imagenes/gamedesign-1.jpg)
-
-![Game-Developer-Car](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/Css/Imagenes/gamedesign-2.jpg)
-
-![Game-Developer-Car](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/Css/Imagenes/gamedesign-3.jpg)
-
-![Game-Developer-Car](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/Css/Imagenes/gamedesign-4.jpg)
-
 ## Portfolio Link
 
-`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Game%20Developer%20Portfolio%20Page`
+[`https://www.diegolibonati.com.ar/#/project/41`](https://www.diegolibonati.com.ar/#/project/41)
 
 ## Video
 
