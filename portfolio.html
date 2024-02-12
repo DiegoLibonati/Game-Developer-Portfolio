@@ -1,88 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Game Design Portfolio</title>
 
-    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
-    <link rel="stylesheet" type="text/css" href="./styles/choosePortfolio.css">
-    <link rel="stylesheet" type="text/css" href="./styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles/navbar.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./src/styles/choosePortfolio.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./src/styles/footer.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
 
-    <script src="https://kit.fontawesome.com/41faca984e.js" crossorigin="anonymous"></script>
-
-
-</head>
-<body>
-
+    <script
+      src="https://kit.fontawesome.com/41faca984e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="header_container">
+      <div class="header_container_logo">
+        <a href="./index.html"
+          ><img src="./src/assets/Navbar/DL.png" alt="logo navbar"
+        /></a>
+        <i class="fa-solid fa-bars"></i>
+      </div>
 
-        <div class="header_container_logo">
-            <a href="./index.html"><img src="./templates/Navbar/DL.png" alt="logo navbar"></a>
-            <i class="fa-solid fa-bars"></i>
-        </div>
-
-        <nav class="header_container_nav">
-            <ul class="header_container_nav_list">
-                <i class="fa-solid fa-x"></i>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">ACERCA DE</a></li>
-                <li><a href="#">CONTACTO</a></li>
-            </ul>
-        </nav>
-
+      <nav class="header_container_nav">
+        <ul class="header_container_nav_list">
+          <i class="fa-solid fa-x"></i>
+          <li><a href="./portfolio.html">PORTFOLIO</a></li>
+          <li><a href="./AcercaDe.html">ACERCA DE</a></li>
+          <li><a href="./AcercaDe.html">CONTACTO</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-       
-        <section class="choose_container">
+      <section class="choose_container">
+        <article class="choose_container_categories">
+          <div class="choose_container_category">
+            <img src="./src/assets/Portfolio/game4.png" alt="img" />
+            <a href="./juegos.html"><h2>JUEGOS</h2></a>
+          </div>
 
-            <article class="choose_container_categories">
-
-                <div class="choose_container_category">
-
-                    <img src="./templates/Portfolio/game4.png" alt="img">
-                    <a href="./juegos.html"><h2>JUEGOS</h2></a>
-
-                </div>
-
-                <div class="choose_container_category">
-
-                    <img src="./templates/Personajes/personaje2.png" alt="img">
-                    <a href="./personajes.html"><h2>PERSONAJES</h2></a>
-
-                </div>
-
-
-            </article>
-
-        </section>
-
+          <div class="choose_container_category">
+            <img src="./src/assets/Personajes/personaje2.png" alt="img" />
+            <a href="./personajes.html"><h2>PERSONAJES</h2></a>
+          </div>
+        </article>
+      </section>
     </main>
 
-
     <footer class="footer_container">
+      <div class="footer_container_networks">
+        <a href="#">LINKEDIN</a>
+        <a href="#">FACEBOOK</a>
+        <a href="#">INSTAGRAM</a>
+      </div>
 
-        <div class="footer_container_networks">
-            <a href="#">LINKEDIN</a>
-            <a href="#">FACEBOOK</a>
-            <a href="#">INSTAGRAM</a>
-        </div>
-
-        <div class="footer_container_goup">
-            <button type="button">VOLVER ARRIBA</button>
-        </div>
-
+      <div class="footer_container_goup">
+        <button type="button">VOLVER ARRIBA</button>
+      </div>
     </footer>
 
-    <script src="./assets/navbarConfig.js"></script>
-
-</body>
+    <script src="./src/ts/navbarConfig.ts"></script>
+  </body>
 </html>
-

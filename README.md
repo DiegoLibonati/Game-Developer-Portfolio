@@ -13,6 +13,13 @@
 2. Join to the correct path of the clone
 3. Open index.html in your favorite navigator
 
+---
+
+1. Clone the repository
+2. Join to the correct path of the clone
+3. Execute: `yarn install`
+4. Execute: `yarn dev`
+
 ## Description
 
 I made a website about game developer portfolio, but basically what I did was to take a design from the internet and implement it on my own without seeing the original code. All this was because I wanted to keep practicing CSS.
@@ -20,7 +27,7 @@ I made a website about game developer portfolio, but basically what I did was to
 ## Technologies used
 
 1. CSS3
-2. Javascript
+2. Typescript
 3. HTML5
 
 ## Portfolio Link

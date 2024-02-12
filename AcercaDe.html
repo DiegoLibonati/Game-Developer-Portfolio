@@ -1,114 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Game Design Portfolio</title>
 
-    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
-    <link rel="stylesheet" type="text/css" href="./styles/acercade.css">
-    <link rel="stylesheet" type="text/css" href="./styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./src/styles/acercade.css" />
+    <link rel="stylesheet" type="text/css" href="./src/styles/footer.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
 
-    <script src="https://kit.fontawesome.com/41faca984e.js" crossorigin="anonymous"></script>
-
-
-</head>
-<body>
-
+    <script
+      src="https://kit.fontawesome.com/41faca984e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="header_container">
+      <div class="header_container_logo">
+        <a href="./index.html"
+          ><img src="./src/assets/Navbar/DL.png" alt="logo navbar"
+        /></a>
+        <i class="fa-solid fa-bars"></i>
+      </div>
 
-        <div class="header_container_logo">
-            <a href="./index.html"><img src="./templates/Navbar/DL.png" alt="logo navbar"></a>
-            <i class="fa-solid fa-bars"></i>
-        </div>
-
-        <nav class="header_container_nav">
-            <ul class="header_container_nav_list">
-                <i class="fa-solid fa-x"></i>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">ACERCA DE</a></li>
-                <li><a href="#">CONTACTO</a></li>
-            </ul>
-        </nav>
-
+      <nav class="header_container_nav">
+        <ul class="header_container_nav_list">
+          <i class="fa-solid fa-x"></i>
+          <li><a href="./portfolio.html">PORTFOLIO</a></li>
+          <li><a href="./AcercaDe.html">ACERCA DE</a></li>
+          <li><a href="./AcercaDe.html">CONTACTO</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="acercade_container">
+      <section class="acercade_container">
+        <article class="acercade_container_header">
+          <h2>DIEGO LIBONATI</h2>
+          <p>DISEÑADOR DE JUEGOS</p>
+        </article>
 
-            <article class="acercade_container_header">
-                <h2>DIEGO LIBONATI</h2>
-                <p>DISEÑADOR DE JUEGOS</p>
-            </article>
+        <article class="acercade_container_middle">
+          <div class="acercade_container_middle_breve">
+            <h3>BREVE RESUMEN</h3>
 
-            <article class="acercade_container_middle">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus nostrum eveniet dolore mollitia alias qui
+              voluptates quia sed ad eius fugiat repellendus consectetur aliquam
+              numquam consequuntur, voluptas exercitationem iste! Possimus
+              facere perferendis iusto debitis ex adipisci molestias aperiam
+              incidunt in? Non suscipit sint a impedit, ducimus reprehenderit
+              accusamus dolore iusto.
+            </p>
+          </div>
 
-                <div class="acercade_container_middle_breve">
-                    <h3>BREVE RESUMEN</h3>
+          <div class="acercade_container_middle_img">
+            <img src="./src/assets/Navbar/DL.png" alt="logo DL" />
+          </div>
+        </article>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nostrum eveniet dolore mollitia alias qui voluptates quia sed ad eius fugiat repellendus consectetur aliquam numquam consequuntur, voluptas exercitationem iste! Possimus facere perferendis iusto debitis ex adipisci molestias aperiam incidunt in? Non suscipit sint a impedit, ducimus reprehenderit accusamus dolore iusto.</p>
-                </div>
+        <article class="acercade_container_base">
+          <div class="acercade_container_base_information">
+            <h3>EDUCACION</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
 
-                <div class="acercade_container_middle_img">
-                    <img src="./templates/Navbar/DL.png" alt="logo DL">
-                </div>
+          <div class="acercade_container_base_information">
+            <h3>COMPETENCIAS</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </article>
+      </section>
 
-            </article>
+      <section class="acercade_container_contact">
+        <h3>¡JUGUEMOS!</h3>
+        <p>NO DUDES EN CONTACTARME PARA FUTUROS TRABAJOS Y COLABORACIONES</p>
 
-            <article class="acercade_container_base">
-                <div class="acercade_container_base_information">
-                    <h3>EDUCACION</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-
-                <div class="acercade_container_base_information">
-                    <h3>COMPETENCIAS</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-            </article>
-
-        </section>
-
-        <section class="acercade_container_contact">
-            <h3>¡JUGUEMOS!</h3>
-            <p>NO DUDES EN CONTACTARME PARA FUTUROS TRABAJOS Y COLABORACIONES</p>
-
-            <form class="acercade_container_contact_form">
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Apellido">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Asunto">
-                <textarea rows="5" col="5" placeholder="Dejame un mensaje..."></textarea>
-                <button type="button">Enviar</button>
-            </form>
-        </section>
+        <form class="acercade_container_contact_form">
+          <input type="text" placeholder="Nombre" />
+          <input type="text" placeholder="Apellido" />
+          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="Asunto" />
+          <textarea
+            rows="5"
+            col="5"
+            placeholder="Dejame un mensaje..."
+          ></textarea>
+          <button type="button">Enviar</button>
+        </form>
+      </section>
     </main>
 
-
     <footer class="footer_container">
+      <div class="footer_container_networks">
+        <a href="#">LINKEDIN</a>
+        <a href="#">FACEBOOK</a>
+        <a href="#">INSTAGRAM</a>
+      </div>
 
-        <div class="footer_container_networks">
-            <a href="#">LINKEDIN</a>
-            <a href="#">FACEBOOK</a>
-            <a href="#">INSTAGRAM</a>
-        </div>
-
-        <div class="footer_container_goup">
-            <button type="button">VOLVER ARRIBA</button>
-        </div>
-
+      <div class="footer_container_goup">
+        <button type="button">VOLVER ARRIBA</button>
+      </div>
     </footer>
 
-    <script src="./assets/navbarConfig.js"></script>
-
-</body>
+    <script src="./src/ts/navbarConfig.ts"></script>
+  </body>
 </html>
-
