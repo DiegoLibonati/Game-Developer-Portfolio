@@ -13,54 +13,54 @@ const insertHtml = async () => {
     const div = document.createElement("div");
     div.classList.add("personaje_container");
 
-    const img = document.createElement("img");
+    const personajeContainerImg = document.createElement("img");
     const a = document.createElement("a");
-    const h2 = document.createElement("h2");
-    const p = document.createElement("p");
+    const personajeName = document.createElement("h2");
+    const personajeGameName = document.createElement("p");
 
-    img.src = games[i].personajes.personajeuno.foto;
-    img.alt = games[i].personajes.personajeuno.nombre;
+    personajeContainerImg.src = games[i].personajes.personajeuno.foto;
+    personajeContainerImg.alt = games[i].personajes.personajeuno.nombre;
 
     a.href = "./verjuego.html";
     a.id = games[i].nombre;
     a.classList.add("showGame");
 
-    h2.textContent = games[i].personajes.personajeuno.nombre;
+    personajeName.textContent = games[i].personajes.personajeuno.nombre;
 
-    a.append(h2);
+    a.append(personajeName);
 
-    p.textContent = `De ${games[i].nombre}`;
+    personajeGameName.textContent = `De ${games[i].nombre}`;
 
-    div.append(img);
+    div.append(personajeContainerImg);
     div.append(a);
-    div.append(p);
+    div.append(personajeGameName);
 
     documentFragment.append(div);
 
     const div2 = document.createElement("div");
     div2.classList.add("personaje_container");
 
-    const img2 = document.createElement("img");
+    const personajeImageTwo = document.createElement("img");
     const a2 = document.createElement("a");
-    const h2_2 = document.createElement("h2");
-    const p2 = document.createElement("p");
+    const personajeNameTwo = document.createElement("h2");
+    const personajeGameNameTwo = document.createElement("p");
 
-    img2.src = games[i].personajes.personajedos.foto;
-    img2.alt = games[i].personajes.personajedos.nombre;
+    personajeImageTwo.src = games[i].personajes.personajedos.foto;
+    personajeImageTwo.alt = games[i].personajes.personajedos.nombre;
 
     a2.href = "./verjuego.html";
     a2.id = games[i].nombre;
     a2.classList.add("showGame");
 
-    h2_2.textContent = games[i].personajes.personajedos.nombre;
+    personajeNameTwo.textContent = games[i].personajes.personajedos.nombre;
 
-    a2.append(h2_2);
+    a2.append(personajeNameTwo);
 
-    p2.textContent = `De ${games[i].nombre}`;
+    personajeGameNameTwo.textContent = `De ${games[i].nombre}`;
 
-    div2.append(img2);
+    div2.append(personajeImageTwo);
     div2.append(a2);
-    div2.append(p2);
+    div2.append(personajeGameNameTwo);
 
     documentFragment.append(div2);
   }

@@ -13,22 +13,22 @@ const insertHtml = async () => {
     const div = document.createElement("div");
     div.classList.add("game_container");
 
-    const img = document.createElement("img");
+    const gameImg = document.createElement("img");
     const a = document.createElement("a");
-    const h2 = document.createElement("h2");
+    const gameName = document.createElement("h2");
 
-    img.src = games[i].fotos.uno;
-    img.alt = games[i].nombre;
+    gameImg.src = games[i].fotos.uno;
+    gameImg.alt = games[i].nombre;
 
     a.href = "./verjuego.html";
     a.id = games[i].nombre;
     a.classList.add("showGame");
 
-    h2.textContent = games[i].nombre;
+    gameName.textContent = games[i].nombre;
 
-    a.append(h2);
+    a.append(gameName);
 
-    div.append(img);
+    div.append(gameImg);
     div.append(a);
 
     documentFragment.append(div);

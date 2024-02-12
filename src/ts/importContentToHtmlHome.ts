@@ -1,7 +1,6 @@
 import { Game } from "../vite-env.js";
 import { getInformationFromDocument } from "./getContentInformation.js";
 import { getHyperLinks } from "./getHyperLinks.js";
-import { createLocalStorage } from "./localStorageConfig.js";
 
 const fragmentElement = document.createDocumentFragment();
 const homeContainerInformation = document.querySelector(
@@ -23,20 +22,20 @@ const insertHtml = async (): Promise<void> => {
     const div = document.createElement("div");
     div.classList.add("home_container_information_newgame");
 
-    const img = document.createElement("img");
-    img.src = games[randomNumber].fotos.uno;
-    img.alt = games[randomNumber].nombre;
+    const imgGame = document.createElement("img");
+    imgGame.src = games[randomNumber].fotos.uno;
+    imgGame.alt = games[randomNumber].nombre;
 
-    div.append(img);
+    div.append(imgGame);
 
     const div2 = document.createElement("div");
     div2.classList.add("home_container_information_newgame_text");
 
-    const h2 = document.createElement("h2");
-    h2.textContent = games[randomNumber].nombre;
+    const gameName = document.createElement("h2");
+    gameName.textContent = games[randomNumber].nombre;
 
-    const p = document.createElement("p");
-    p.textContent = `${games[randomNumber].genero} | ${games[randomNumber].plataforma} | ${games[randomNumber].año}`;
+    const gameInfomation = document.createElement("p");
+    gameInfomation.textContent = `${games[randomNumber].genero} | ${games[randomNumber].plataforma} | ${games[randomNumber].año}`;
 
     const a = document.createElement("a");
     a.href = "./verjuego.html";
@@ -49,8 +48,8 @@ const insertHtml = async (): Promise<void> => {
 
     a.append(i);
 
-    div2.append(h2);
-    div2.append(p);
+    div2.append(gameName);
+    div2.append(gameInfomation);
     div2.append(a);
 
     div.append(div2);
@@ -69,10 +68,10 @@ const insertHtml = async (): Promise<void> => {
       const div = document.createElement("div");
       div.classList.add("portfolio_container_game_title");
 
-      const h3 = document.createElement("h3");
-      h3.textContent = `0${i + 1} ${games[randomNumber].genero}`;
+      const genreGame = document.createElement("h3");
+      genreGame.textContent = `0${i + 1} ${games[randomNumber].genero}`;
 
-      div.append(h3);
+      div.append(genreGame);
 
       const div2 = document.createElement("div");
       div2.classList.add("portfolio_container_game_description");
@@ -83,14 +82,14 @@ const insertHtml = async (): Promise<void> => {
 
       div2.append(img);
 
-      const h3_2 = document.createElement("h3");
-      h3_2.textContent = games[randomNumber].nombre;
+      const gameNameTwo = document.createElement("h3");
+      gameNameTwo.textContent = games[randomNumber].nombre;
 
-      const p = document.createElement("p");
-      p.textContent = games[randomNumber].rol;
+      const gameRol = document.createElement("p");
+      gameRol.textContent = games[randomNumber].rol;
 
-      const p2 = document.createElement("p");
-      p2.textContent = games[randomNumber].descripcion;
+      const gameDescription = document.createElement("p");
+      gameDescription.textContent = games[randomNumber].descripcion;
 
       const a = document.createElement("a");
       a.href = "./verjuego.html";
@@ -98,9 +97,9 @@ const insertHtml = async (): Promise<void> => {
       a.id = games[randomNumber].nombre;
       a.textContent = "Ver Juego";
 
-      div2.append(h3_2);
-      div2.append(p);
-      div2.append(p2);
+      div2.append(gameNameTwo);
+      div2.append(gameRol);
+      div2.append(gameDescription);
       div2.append(a);
 
       article.append(div);
@@ -120,27 +119,27 @@ const insertHtml = async (): Promise<void> => {
       const div = document.createElement("div");
       div.classList.add("personaje_container");
 
-      const img = document.createElement("img");
+      const personajeImg = document.createElement("img");
       const a = document.createElement("a");
-      const h3 = document.createElement("h3");
-      const p = document.createElement("p");
+      const gameName = document.createElement("h3");
+      const gameRol = document.createElement("p");
 
-      img.src = games[randomNumber].personajes.personajeuno.foto;
-      img.alt = games[randomNumber].personajes.personajeuno.nombre;
+      personajeImg.src = games[randomNumber].personajes.personajeuno.foto;
+      personajeImg.alt = games[randomNumber].personajes.personajeuno.nombre;
 
       a.href = "./verjuego.html";
       a.classList.add("showGame");
       a.id = games[randomNumber].nombre;
 
-      h3.textContent = games[randomNumber].personajes.personajeuno.nombre;
+      gameName.textContent = games[randomNumber].personajes.personajeuno.nombre;
 
-      a.append(h3);
+      a.append(gameName);
 
-      p.textContent = games[randomNumber].rol;
+      gameRol.textContent = games[randomNumber].rol;
 
-      div.append(img);
+      div.append(personajeImg);
       div.append(a);
-      div.append(p);
+      div.append(gameRol);
 
       fragmentElement.append(div);
       games.splice(randomNumber, 1);

@@ -40,146 +40,127 @@ https://user-images.githubusercontent.com/99032604/199380469-42fb616f-de72-4125-
 
 ## Documentation
 
-### navbarConfig.js
+### navbarConfig.ts
 
 These functions will take care of closing and opening the navbar:
 
 ```
+// A. Open and close navbar config
 const openNavbar = () => {
-
-    navbarContainer.classList.add("openNavMobile");
-
-}
+  navbarContainer.classList.add("openNavMobile");
+};
 
 const closeNavbar = () => {
+  navbarContainer.classList.remove("openNavMobile");
+};
 
-    navbarContainer.classList.remove("openNavMobile");
-
-}
+btnOpenNavbar.addEventListener("click", openNavbar);
+btnCloseNavbar.addEventListener("click", closeNavbar);
 ```
 
 When a scroll is detected and the scroll passes the height of 50, the color of the navbar will change:
 
 ```
-window.addEventListener("scroll", (e) => {
+// B. Change background color to navbar when event scroll was detected
 
-    if (mediaQuery1024Px.matches){
-
-        scrollDetected(window.scrollY, headerContainer, "changeNavbarColor");
-
-    } else {
-
-        scrollDetected(window.scrollY, headerContainerMobile, "changeNavbarColor");
-
-    }
-
+window.addEventListener("scroll", () => {
+  if (mediaQuery1024Px.matches) {
+    scrollDetected(window.scrollY, headerContainer, "changeNavbarColor");
+  } else {
+    scrollDetected(window.scrollY, headerContainerMobile, "changeNavbarColor");
+  }
 });
 
-const scrollDetected = (scrollY, container, nameClass) => {
-
-    if (scrollY > 50){
-        container.classList.add(`${nameClass}`);
-    } else {
-        container.classList.remove(`${nameClass}`);
-    }
-
-}
+const scrollDetected = (
+  scrollY: number,
+  container: HTMLElement,
+  nameClass: string
+): void => {
+  if (scrollY > 50) {
+    container.classList.add(`${nameClass}`);
+    return;
+  }
+  container.classList.remove(`${nameClass}`);
+  return;
+};
 ```
 
-### localStorageConfig.js
+### localStorageConfig.ts
 
 The `createLocalStorage()` function will allow us to create a LocalStorage if it does not exist and the `getItemFromLocalStorage()` function will allow us to get the LocalStorage information:
 
 ```
-export const createLocalStorage = (itemClicked) => {
+export const createLocalStorage = (itemClicked: string): void => {
+  localStorage.setItem("itemClicked", itemClicked);
+  return;
+};
 
-    localStorage.setItem("itemClicked", itemClicked);
-
-}
-
-export const getItemFromLocalStorage = () => {
-
-    return localStorage.getItem("itemClicked");
-
-}
+export const getItemFromLocalStorage = (): string => {
+  return localStorage.getItem("itemClicked")!;
+};
 ```
 
-### importContentHtmlHome.js
+### importContentHtmlHome.ts
 
 This file is used to render HTML from javascript
 
-### importContentHtmlJuegos.js
+### importContentHtmlJuegos.ts
 
 This file is used to render HTML from javascript
 
-### importContentHtmlPersonajes.js
+### importContentHtmlPersonajes.ts
 
 This file is used to render HTML from javascript
 
-### importContentHtmlVerJuego.js
+### importContentHtmlVerJuego.ts
 
 This file is used to render HTML from javascript
 
-### homeSlider.js
+### homeSlider.ts
 
-The `changeHomeImg()` function checks if the index you want to access from an array exists, depending on that it will continue to advance or return to an initial position which would be 0. On the other hand the `checkIfImgHasClass()` function is a function that allows not to show all images except the image that is being displayed:
+The `changeHomeImg()` function checks if the index you want to access from an array exists, depending on that it will continue to advance or return to an initial position which would be 0:
 
 ```
+const allHomeImgs = document.querySelectorAll(".homeImg") as NodeList;
+
+let currentHomeImg: number = 0;
+
 const changeHomeImg = () => {
+
+    const img = allHomeImgs[currentHomeImg] as HTMLImageElement
+
+    const currentImg = document.querySelector(".showHomeImg")
+
+    currentImg?.classList.remove("showHomeImg")
 
     if (currentHomeImg >= allHomeImgs.length -1){
         currentHomeImg = 0;
-        allHomeImgs[currentHomeImg].classList.add("showHomeImg");
-        checkIfImgHasClass(allHomeImgs[currentHomeImg]);
     } else {
         currentHomeImg++;
-        allHomeImgs[currentHomeImg].classList.add("showHomeImg");
-        checkIfImgHasClass(allHomeImgs[currentHomeImg]);
     }
 
+    img.classList.add("showHomeImg");
 }
 
-const checkIfImgHasClass = (currentImg) => {
 
-    allHomeImgs.forEach(function(img){
 
-        if (img !== currentImg){
-            img.classList.remove("showHomeImg");
-        }
-
-    })
-
-}
+setInterval(changeHomeImg, 5000);
 ```
 
-### getContentInformation.js
+### getContentInformation.ts
 
 The `getInformationFromDocument()` function allows us to get all the information we need to render through a file called `information.json` which is located in the root of this project:
 
 ```
-export const getInformationFromDocument = async () => {
+import { Game } from "../vite-env";
 
-    const petition = await fetch("./informacion.json");
+export const getInformationFromDocument = async (): Promise<Game[]> => {
 
-    const result = await petition.json();
+    const request = await fetch("./informacion.json");
+
+    const result: Game[] = await request.json();
 
     return result;
-
-}
-```
-
-The `createElements()` function creates elements from an HTML given by parameter, it will also create the given element from a tag also by parameter and finally it dates a class to that element also by parameter:
-
-```
-export const createElements = (tag, html, clasS) => {
-
-    const element = document.createElement(`${tag}`);
-
-    element.innerHTML = `${html}`;
-
-    element.setAttribute("class", `${clasS}`);
-
-    return element
 
 }
 ```
