@@ -1,4 +1,4 @@
-# Game-Developer-Portfolio-Page
+# Game Developer Portfolio
 
 ## Getting Started
 
@@ -32,7 +32,7 @@ I made a website about game developer portfolio, but basically what I did was to
 
 ## Portfolio Link
 
-[`https://www.diegolibonati.com.ar/#/project/41`](https://www.diegolibonati.com.ar/#/project/41)
+[`https://www.diegolibonati.com.ar/#/project/Game-Developer-Portfolio`](https://www.diegolibonati.com.ar/#/project/Game-Developer-Portfolio)
 
 ## Video
 
